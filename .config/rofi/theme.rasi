@@ -1,0 +1,235 @@
+* {
+    bg0: #2E3440;
+    bg1: #3B4252;
+    bg2: #434C5E;
+    bg3: #4C566A;
+    
+    fg0: #D8DEE9;
+    fg1: #E5E9F0;
+    fg2: #ECEFF4;
+    
+    red: #2e3440;
+    orange: #D08770;
+    yellow: #EBCB8B;
+    green: #A3BE8C;
+    purple: #B48EAD;
+    
+    blue1: #81A1C1;
+    blue2: #5E81AC;
+    cyan: #88C0D0;
+    
+    urgent: @red;
+    active: @green;
+    
+    bg-color: @bg0;
+    background-color: @bg0;
+    foreground-color: @fg0;
+    border-color: @red;
+    selected-background: @bg2;
+    selected-foreground: @fg2;
+    selected-border-color: @cyan;
+    
+    font: "JetBrainsMono Nerd Font 12";
+    text-color: @fg1;
+    highlight: bold italic;
+    
+    border-width: 2px;
+    margin: 0px;
+    padding: 10px;
+    spacing: 5px;
+    
+}
+
+window {
+    background-color: @bg-color;
+    border: @border-width;
+    border-color: @border-color;
+    border-radius: 12px;
+    padding: 20px;
+    width: 45%;
+    location: center;
+    anchor: center;
+    enabled: true;
+    
+    shadow: rgba(0, 0, 0, 0.4);
+    shadow-radius: 20px;
+    shadow-offset-x: 0px;
+    shadow-offset-y: 5px;
+}
+
+inputbar {
+    background-color: @bg1;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 0px 0px 10px 0px;
+    children: [prompt, entry];
+}
+
+prompt {
+    background-color: @bg3;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 0px 10px 0px 0px;
+    text-color: @bg0;
+    font-weight: bold;
+}
+
+entry {
+    background-color: inherit;
+    padding: 8px;
+    text-color: @fg1;
+    placeholder: "Поиск...";
+    placeholder-color: @bg3;
+}
+
+listview {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px 0px;
+    dynamic: true;
+    scrollbar: false;
+    lines: 8;
+}
+
+scrollbar {
+    handle-color: @blue1;
+    handle-width: 5px;
+    border-radius: 10px;
+}
+
+element {
+    background-color: transparent;
+    padding: 12px 15px;
+    border-radius: 6px;
+    text-color: @fg0;
+    orientation: horizontal;
+    children: [element-icon, element-text];
+}
+
+element normal active {
+    background-color: @bg1;
+    text-color: @fg1;
+}
+
+element selected {
+    background-color: @selected-background;
+    text-color: @selected-foreground;
+    
+    border-radius: 6px;
+}
+
+element selected active {
+    background-color: @bg2;
+    text-color: @cyan;
+}
+
+element-icon {
+    size: 20px;
+    padding: 0px 15px 0px 0px;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: inherit;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+}
+
+error-message {
+    background-color: @red;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px;
+    border-color: @bg0;
+    text-color: @fg2;
+}
+
+mode-switcher {
+    background-color: @bg1;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: @bg2;
+    text-color: @fg1;
+    border-radius: 5px;
+    margin: 0px 2px;
+}
+
+button selected {
+    background-color: @red;
+    text-color: @fg2;
+    font-weight: bold;
+}
+
+hint {
+    background-color: @bg3;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-color: @fg0;
+    font-size: 10px;
+    margin: 0px 5px;
+}
+
+context-menu {
+    background-color: @bg1;
+    border-radius: 8px;
+    border: 1px;
+    border-color: @bg3;
+    padding: 10px;
+}
+
+context-menu item {
+    padding: 10px 15px;
+    background-color: transparent;
+    text-color: @fg0;
+    border-radius: 5px;
+}
+
+context-menu item selected {
+    background-color: @bg2;
+    text-color: @cyan;
+}
+
+urgent {
+    background-color: @urgent;
+    text-color: @fg2;
+    border: 1px;
+    border-color: @red;
+    border-radius: 6px;
+}
+
+active {
+    background-color: @active;
+    text-color: @bg0;
+    border-radius: 6px;
+}
+
+overlay {
+    background-color: rgba(46, 52, 64, 0.9);
+}
+
+sidebar {
+    background-color: @bg1;
+    border: 1px;
+    border-color: @bg3;
+    border-radius: 0px 8px 8px 0px;
+    padding: 15px;
+    width: 200px;
+}
+
+window {
+    fade: true;
+    fade-duration: 200;
+    fade-in-duration: 200;
+    fade-out-duration: 200;
+}
+
+
+

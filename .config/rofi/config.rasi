@@ -1,0 +1,10 @@
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run ];
+  font: "Fira Code 18";
+  
+}
+
+@theme "~/.config/rofi/theme.rasi"
+ 
+/* Insert theme modifications after this */
