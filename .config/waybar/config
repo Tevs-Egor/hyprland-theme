@@ -29,7 +29,8 @@
     
     "clock": {
         "format": "{:%H:%M | %d.%m.%Y}",
-        "tooltip-format": "{:%A, %d %B %Y}"
+        "tooltip-format": "{:%A, %d %B %Y}",
+        "on-click": "gnome-calendar"
     },
     
     "pulseaudio": {
@@ -58,12 +59,14 @@
     
     "cpu": {
         "format": "󰍛 {usage}%",
-        "interval": 5
+        "interval": 5,
+        "on-click": "missioncenter"
     },
     
     "memory": {
         "format": "󰾅 {percentage}%",
-        "interval": 5
+        "interval": 5,
+        "on-click": "missioncenter"
     },
     
     "temperature": {
