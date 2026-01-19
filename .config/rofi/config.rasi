@@ -6,5 +6,3 @@ configuration {
 }
 
 @theme "~/.config/rofi/theme.rasi"
- 
-/* Insert theme modifications after this */
