@@ -49,14 +49,6 @@
         "on-click": "pavucontrol"
     },
     
-    "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} 󰈀",
-        "format-disconnected": "Disconnected ⚠",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "on-click": "nm-connection-editor"
-    },
-    
     "cpu": {
         "format": "󰍛 {usage}%",
         "interval": 5,
@@ -67,24 +59,6 @@
         "format": "󰾅 {percentage}%",
         "interval": 5,
         "on-click": "missioncenter"
-    },
-    
-    "temperature": {
-        "thermal-zone": 0,
-        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "format": "{temperatureC}°C ",
-        "interval": 5
-    },
-    
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% 󱘖",
-        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     
     "tray": {
