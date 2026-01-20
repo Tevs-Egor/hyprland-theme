@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="nord-extended/nord"
+ZSH_THEME="kali-like"
 
 ENABLE_CORRECTION="true"
 
@@ -9,7 +9,7 @@ plugins=(git docker gcloud terraform vagrant zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-alias zshconfig="nano ~/.zshrc"
+alias zshConfig="nano ~/.zshrc"
 
 alias qtileConfig="nano ~/.config/qtile/config.py"
 
@@ -18,6 +18,8 @@ alias i3Config="nano ~/.config/i3/config"
 alias alacrittyConfig="nano ~/.config/alacritty/alacritty.toml"
 
 alias hyprlandConfig="nano ~/.config/hypr/hyprland.conf"
+
+alias hyprlockConfig="nano ~/.config/hypr/hyprlock.conf"
 
 alias waybarConfig="nano ~/.config/waybar/config"
 
