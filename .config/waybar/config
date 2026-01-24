@@ -4,7 +4,7 @@
     "height": 50,
     "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "cpu", "memory","network", "clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "hyprland/language", "network", "clock"],
     
     "hyprland/workspaces": {
         "format": "{name}",
@@ -78,5 +78,12 @@
     "tray": {
         "icon-size": 30,
         "spacing": 10
+    },
+    
+    "hyprland/language": {
+  	"format": "{}",
+  	"format-en": "EN",
+  	"format-ru": "RU",
+  	"tooltip": false
     }
 }
