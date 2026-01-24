@@ -4,7 +4,7 @@
     "height": 50,
     "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "cpu", "memory", "clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory","network", "clock"],
     
     "hyprland/workspaces": {
         "format": "{name}",
@@ -28,7 +28,7 @@
     },
     
     "clock": {
-        "format": "{:%H:%M | %d.%m.%Y}",
+        "format": "{:%H:%M}",
         "tooltip-format": "{:%A, %d %B %Y}",
         "on-click": "gnome-calendar"
     },
@@ -50,10 +50,12 @@
     },
     
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} 󰈀",
-        "format-disconnected": "Disconnected ⚠",
-        "tooltip-format": "{ifname} via {gwaddr}",
+    	"interval": 2,
+        "format-wifi": "  {essid} {signalStrength}%",
+	"format-ethernet": "󰈀  LAN",
+	"format-linked": "󰈀  Linked",
+	"format-disconnected": "󰤭",
+	"format-disabled": "󰤮",
         "on-click": "nm-connection-editor"
     },
     
@@ -62,35 +64,15 @@
         "interval": 5,
         "on-click": "kitty -e htop",
         "states": {
-    		"warning": 70,
-    		"critical": 90
+    		"critical": 80
   	}
     },
     
     "memory": {
         "format": "󰾅 {percentage}%",
         "interval": 5,
-        "warning": 70,
-  	"critical": 85,
+  	"critical": 80,
         "on-click": "kitty -e htop"
-    },
-    
-    "temperature": {
-        "thermal-zone": 0,
-        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "format": "{temperatureC}°C ",
-        "interval": 5
-    },
-    
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% 󱘖",
-        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     
     "tray": {

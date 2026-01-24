@@ -34,11 +34,11 @@ window#waybar {
     background-color: #0F131C;
 }
 
-#clock, #cpu, #memory, #pulseaudio, #tray {
+#clock, #cpu, #memory, #pulseaudio, #tray, #network {
     padding: 0 15px;
     margin: 5 0px;
     background-color: transparent;
-    color: #5E81AC
+    color: #5E81AC;
 }
 
 #cpu.critical {
@@ -50,5 +50,9 @@ window#waybar {
 }
 
 #pulseaudio.muted {
+    color: #BF616A;
+}
+
+#network.disconnected {
     color: #BF616A;
 }
