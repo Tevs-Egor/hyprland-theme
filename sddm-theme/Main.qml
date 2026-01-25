@@ -9,7 +9,7 @@ Rectangle {
 
     Image {
         anchors.fill: parent
-        source: "assets/1.jpg"
+        source: "assets/2.png"
         fillMode: Image.PreserveAspectCrop
     }
 
