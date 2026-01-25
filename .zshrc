@@ -1,6 +1,6 @@
-export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="kali-like"
+export ZSH="$HOME/.oh-my-zsh"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 ENABLE_CORRECTION="true"
 
@@ -35,3 +35,6 @@ export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
 export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
