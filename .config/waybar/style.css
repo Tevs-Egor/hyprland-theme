@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background: #2E3440;
+    background: #1E2128;
 }
 
 #workspaces button {
@@ -19,7 +19,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background-color: #2E3440;
+  background-color: transparent;
   color: #BF616A;
 }
 
