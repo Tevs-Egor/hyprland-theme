@@ -31,10 +31,18 @@ window#waybar {
     background-color: #0F131C;
 }
 
-#clock, #cpu, #memory, #pulseaudio, #tray, #network, #language {
+#clock, #cpu, #memory, #pulseaudio, #tray, #network, #language, #bluetooth {
     padding: 0 15px;
     margin: 5 0px;
     background-color: transparent;
+}
+
+#bluetooth {
+    color: #B5BCC9;
+}
+
+#bluetooth.off {
+    color: #BF616A;
 }
 
 #clock {

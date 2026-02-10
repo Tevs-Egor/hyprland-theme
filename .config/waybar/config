@@ -4,7 +4,7 @@
     "height": 50,
     "modules-left": ["hyprland/workspaces", "tray"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "cpu", "memory", "hyprland/language", "network", "clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "hyprland/language", "bluetooth", "network", "clock"],
     
     "hyprland/workspaces": {
         "format": "{name}",
@@ -26,6 +26,15 @@
     },
         "on-click": "activate"
     },
+    
+    "bluetooth": {
+  	"format": "{icon}",
+  	"format-connected": "{icon}",
+  	"format-disabled": "{icon}",
+  	"tooltip": true,
+  	"on-click": "blueman-manager"
+    },
+
     
     "clock": {
         "format": "{:%H:%M}",
