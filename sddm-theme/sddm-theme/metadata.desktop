@@ -1,0 +1,6 @@
+[SddmGreeterTheme]
+Name=sddm-theme
+Description=Custom SDDM Theme
+Author=Egor
+Type=sddm-theme
+MainScript=Main.qml

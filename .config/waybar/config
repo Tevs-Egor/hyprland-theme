@@ -34,7 +34,7 @@
     },
     
     "pulseaudio": {
-        "format": "{volume}% {icon}",
+	"format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon}",
         "format-muted": "󰝟",
         "format-icons": {
@@ -85,5 +85,15 @@
   	"format-en": "EN",
   	"format-ru": "RU",
   	"tooltip": false
+    },
+    
+    "bluetooth": {
+        "interval": 1,
+        "format": "",
+        "format-connected": " {device_alias}",
+        "format-disabled": "󰂲",
+        "tooltip": true,
+        "on-click": "bluetooth-manager",
     }
+
 }
