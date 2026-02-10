@@ -9,7 +9,7 @@ Rectangle {
 
     Image {
         anchors.fill: parent
-        source: "assets/2.png"
+        source: "assets/3.png"
         fillMode: Image.PreserveAspectCrop
     }
 
@@ -21,16 +21,27 @@ Rectangle {
         spacing: 12
 
         TextField {
-            id: usernameField
-            placeholderText: "Username"
-            width: 250
-        }
-
-        TextField {
             id: passwordField
             placeholderText: "Password"
             echoMode: TextInput.Password
             width: 250
+            focus: true
+            
+            Keys.onReturnPressed: {
+            sddm.login(
+            userModel.lastUser,
+            passwordField.text,
+            sessionModel.lastIndex
+        	)
+            }
+            
+            Keys.onEnterPressed: {
+            sddm.login(
+            userModel.lastUser,
+            passwordField.text,
+            sessionModel.lastIndex
+        	)
+    	    }
         }
 
         Button {
