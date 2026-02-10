@@ -1,5 +1,5 @@
 * {
-    bg0: #2E3440;
+    bg0: #1E2128;
     bg1: #3B4252;
     bg2: #434C5E;
     bg3: #4C566A;
@@ -43,7 +43,7 @@
 window {
     background-color: @bg-color;
     border: @border-width;
-    border-color: @border-color;
+    border-color: @fg1;
     border-radius: 12px;
     padding: 20px;
     width: 45%;
@@ -70,7 +70,7 @@ prompt {
     padding: 8px 12px;
     border-radius: 5px;
     margin: 0px 10px 0px 0px;
-    text-color: @bg0;
+    text-color: @fg1;
     font-weight: bold;
 }
 
